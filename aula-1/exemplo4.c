@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+/*Escreva um programa que armazena um numero '20' e uma letra 'd' e apresente os dois na tela*/
 int main(){
     int numero = 20;
     char letra = 'd';

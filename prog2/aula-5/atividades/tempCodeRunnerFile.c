@@ -1,0 +1,1 @@
+vetorPar[i] = 0;

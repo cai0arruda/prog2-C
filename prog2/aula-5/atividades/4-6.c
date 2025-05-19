@@ -9,11 +9,13 @@ int main(){
     system("cls");
     int vetor[10];
     int maior;
+    int pMaior;
     int menor;
     for(int i = 0; i<10;){
         printf("Digite o valor %d: ",i);
         scanf("%d", &vetor[i]);
         maior = vetor[i];
+        pMaior = i;
         i++;
     }
     for(int i = 0; i<10; i++){
@@ -22,6 +24,7 @@ int main(){
     for(int i = 0; i<10; i++){
         if(maior<vetor[i]){
             maior = vetor[i];
+            pMaior = i;
         }
         else{
             maior = maior;
@@ -32,6 +35,6 @@ int main(){
             menor = vetor[i];
         }
     }
-    printf("\nMAIOR VALOR - %d",maior);
+    printf("\nMAIOR VALOR - %d - na posição %d", maior, pMaior);
     printf("\nMENOR VALOR - %d",menor);
 }

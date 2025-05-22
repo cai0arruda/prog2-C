@@ -1,5 +1,4 @@
 def para_decimal(numero, base):
-    """Converte qualquer base para decimal (base 10) recursivamente"""
     digitos = "0123456789ABCDEF"
     numero = numero.upper()
 
@@ -9,7 +8,6 @@ def para_decimal(numero, base):
         return (digitos.index(numero[0]) * (base ** (len(numero) - 1))) + para_decimal(numero[1:], base)
 
 def de_decimal_para_base(n, base):
-    """Converte decimal para qualquer base recursivamente"""
     digitos = "0123456789ABCDEF"
     if n < base:
         return digitos[n]
